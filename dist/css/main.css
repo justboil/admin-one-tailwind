@@ -627,23 +627,33 @@ video {
   align-items: center;
 }
 
-.navbar-item.has-user-avatar .is-user-avatar {
+.navbar-item.has-user-avatar .user-avatar {
   display: inline-flex;
   height: 1.5rem;
   margin-right: 0.75rem;
   width: 1.5rem;
 }
 
-.navbar-item.has-dropdown {
+.navbar-item.dropdown {
   padding: 0px;
 }
 
 @media (min-width: 768px) {
-  .navbar-item.has-dropdown {
+  .navbar-item.dropdown {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+}
+
+.navbar-item.dropdown > .navbar-link .icon:last-child {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-item.dropdown > .navbar-link .icon:last-child {
+    display: inline-flex;
   }
 }
 
@@ -1097,16 +1107,26 @@ body {
   width: 100%;
 }
 
-.has-aside-mobile-expanded .aside {
+.aside-mobile-expanded .aside {
   left: 0px;
 }
 
-.has-aside-mobile-expanded .navbar {
+.aside-mobile-expanded .navbar {
   margin-left: 15rem;
 }
 
-.has-aside-mobile-expanded #app {
+.aside-mobile-expanded #app {
   margin-left: 15rem;
+}
+
+.aside-mobile-expanded, .aside-mobile-expanded body {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .aside-mobile-expanded, .aside-mobile-expanded body {
+    overflow: visible;
+  }
 }
 
 .menu-label {
@@ -1318,6 +1338,10 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
+}
+
+.buttons.nowrap {
+  flex-wrap: nowrap;
 }
 
 .buttons.right {
@@ -1772,8 +1796,12 @@ progress::-ms-fill {
   }
 }
 
-.has-dropdown {
+.dropdown {
   cursor: pointer;
+}
+
+.clipped, .clipped body {
+  overflow: hidden;
 }
 
 .modal {
@@ -1783,6 +1811,10 @@ progress::-ms-fill {
   justify-content: center;
   overflow: hidden;
   position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   z-index: 40;
 }
 
@@ -1794,6 +1826,11 @@ progress::-ms-fill {
   --tw-bg-opacity: 1;
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
   --tw-bg-opacity: 0.8;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .modal-card {
@@ -1813,6 +1850,12 @@ progress::-ms-fill {
   }
 }
 
+.modal-card-body > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .modal-card-body {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -1824,14 +1867,17 @@ progress::-ms-fill {
 
 .modal-card-head, .modal-card-foot {
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
   --tw-border-opacity: 1;
-  border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  padding: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   position: relative;
 }
 
@@ -1845,6 +1891,10 @@ progress::-ms-fill {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   border-top-width: 1px;
+}
+
+.modal-card-foot .button:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .notification {

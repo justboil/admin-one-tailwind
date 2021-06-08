@@ -48,12 +48,16 @@
     @apply flex items-center;
   }
 
-  .navbar-item.has-user-avatar .is-user-avatar {
+  .navbar-item.has-user-avatar .user-avatar {
     @apply w-6 h-6 mr-3 inline-flex;
   }
 
-  .navbar-item.has-dropdown {
+  .navbar-item.dropdown {
     @apply p-0 md:py-2 md:px-3;
+  }
+
+  .navbar-item.dropdown > .navbar-link .icon:last-child {
+    @apply hidden md:inline-flex;
   }
 
   .navbar-item.desktop-icon-only {

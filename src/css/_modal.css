@@ -1,5 +1,5 @@
 .modal {
-  @apply hidden items-center flex-col justify-center overflow-hidden fixed z-40;
+  @apply hidden items-center flex-col justify-center overflow-hidden fixed inset-0 z-40;
 }
 
 .modal.active {
@@ -7,7 +7,7 @@
 }
 
 .modal-background {
-  @apply bg-gray-900 bg-opacity-80;
+  @apply absolute inset-0 bg-gray-900 bg-opacity-80;
 }
 
 .modal-card {
@@ -17,11 +17,11 @@
 }
 
 .modal-card-body {
-  @apply bg-white flex-grow flex-shrink overflow-auto p-6;
+  @apply bg-white flex-grow flex-shrink overflow-auto p-6 space-y-2;
 }
 
 .modal-card-head, .modal-card-foot {
-  @apply flex items-center flex-shrink-0 justify-start p-6 relative bg-gray-50 border-gray-100;
+  @apply flex items-center flex-shrink-0 justify-start px-6 py-4 relative bg-gray-100 border-gray-200;
 }
 
 .modal-card-head {
@@ -30,4 +30,8 @@
 
 .modal-card-foot {
   @apply border-t rounded-b;
+}
+
+.modal-card-foot .button:not(:last-child) {
+  @apply mr-2;
 }

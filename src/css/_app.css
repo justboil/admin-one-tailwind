@@ -2,6 +2,10 @@
   @apply w-screen transition-all md:w-auto;
 }
 
-.has-dropdown {
+.dropdown {
   @apply cursor-pointer;
+}
+
+.clipped, .clipped body {
+  @apply overflow-hidden;
 }

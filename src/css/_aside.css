@@ -6,16 +6,20 @@
   @apply flex flex-row w-full bg-gray-900 text-white flex-1 px-3 h-14 items-center;
 }
 
-.has-aside-mobile-expanded .aside {
+.aside-mobile-expanded .aside {
   @apply left-0;
 }
 
-.has-aside-mobile-expanded .navbar {
+.aside-mobile-expanded .navbar {
   @apply ml-60;
 }
 
-.has-aside-mobile-expanded #app {
+.aside-mobile-expanded #app {
   @apply ml-60;
+}
+
+.aside-mobile-expanded, .aside-mobile-expanded body {
+  @apply overflow-hidden md:overflow-visible;
 }
 
 .menu-label {

@@ -37,6 +37,10 @@
   @apply flex items-center flex-wrap justify-start;
 }
 
+.buttons.nowrap {
+  @apply flex-nowrap;
+}
+
 .buttons.right {
   @apply justify-end;
 }
