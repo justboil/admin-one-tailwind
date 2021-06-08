@@ -5,6 +5,7 @@ const concat = require('gulp-concat')
 const replace = require('gulp-replace')
 const uglify = require('gulp-uglify')
 const postcss = require('gulp-postcss')
+const cleancss = require('gulp-clean-css')
 
 /* Destination dir */
 
@@ -46,6 +47,7 @@ const processJsChartSampleMin = () => {
 const processCss = () => {
   return src('src/css/main.css')
     .pipe(postcss())
+    .pipe(cleancss())
     .pipe(dest(destDir + '/css'))
 }
 
