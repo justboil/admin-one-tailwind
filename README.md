@@ -1,6 +1,6 @@
 # [Admin One &mdash; Free Tailwind Admin Dashboard](https://justboil.me/tailwind-admin-templates)
 
-[comment]: <> ([![version]&#40;https://img.shields.io/github/v/release/justboil/admin-one-bulma-dashboard&#41;]&#40;https://justboil.me/bulma-admin-template/one-html&#41;  [![license]&#40;https://img.shields.io/badge/license-MIT-blue.svg&#41;]&#40;https://justboil.me/bulma-admin-template/one-html&#41;)
+[![version](https://img.shields.io/github/v/release/justboil/admin-one-tailwind)](https://justboil.me/tailwind-admin-templates)  [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://justboil.me/tailwind-admin-templates)
 
 [![Free Tailwind CSS admin dashboard](https://justboil.me/images/one-tailwind/repository-preview-hi-res.png)](https://justboil.github.io/admin-one-tailwind/)
 
