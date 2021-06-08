@@ -7,7 +7,13 @@
   <title>Forms - Admin One HTML - Tailwind CSS Admin Dashboard</title>
 
   <!-- Tailwind is included -->
-  <link rel="stylesheet" href="css/main.css?v=1623067603349">
+  <link rel="stylesheet" href="css/main.css?v=1623142040419">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00b4b6"/>
+  <meta name="theme-color" content="#ffffff"/>
 </head>
 <body>
 
@@ -23,13 +29,13 @@
     </div>
   </div>
   <div class="navbar-brand is-right">
-    <a class="navbar-item jb-navbar-menu-toggle" data-target="navbar-menu">
+    <a class="navbar-item --jb-navbar-menu-toggle" data-target="navbar-menu">
       <span class="icon"><i class="mdi mdi-dots-vertical"></i></span>
     </a>
   </div>
   <div class="navbar-menu" id="navbar-menu">
     <div class="navbar-end">
-      <div class="navbar-item has-dropdown has-dropdown-with-icons has-divider is-hoverable">
+      <div class="navbar-item dropdown has-divider">
         <a class="navbar-link">
           <span class="icon"><i class="mdi mdi-menu"></i></span>
           <span>Sample Menu</span>
@@ -57,9 +63,9 @@
           </a>
         </div>
       </div>
-      <div class="navbar-item has-dropdown has-divider has-user-avatar">
+      <div class="navbar-item dropdown has-divider has-user-avatar">
         <a class="navbar-link">
-          <div class="is-user-avatar">
+          <div class="user-avatar">
             <img src="https://avatars.dicebear.com/v2/initials/john-doe.svg" alt="John Doe" class="rounded-full">
           </div>
           <div class="is-user-name"><span>John Doe</span></div>
@@ -85,7 +91,7 @@
           </a>
         </div>
       </div>
-      <a href="https://justboil.me/bulma-admin-template/one-html" title="About" class="navbar-item has-divider desktop-icon-only">
+      <a href="https://justboil.me/tailwind-admin-templates" title="About" class="navbar-item has-divider desktop-icon-only">
         <span class="icon"><i class="mdi mdi-help-circle-outline"></i></span>
         <span>About</span>
       </a>
@@ -134,7 +140,7 @@
         </a>
       </li>
       <li>
-        <a class="has-dropdown">
+        <a class="dropdown">
           <span class="icon"><i class="mdi mdi-view-list"></i></span>
           <span class="menu-item-label">Submenus</span>
           <span class="icon"><i class="mdi mdi-plus"></i></span>
@@ -395,8 +401,8 @@
           © 2021, JustBoil.me
         </div>
         <div class="level-item">
-          <a href="https://github.com/vikdiesel/admin-one-bulma-dashboard" style="height: 20px">
-            <img src="https://img.shields.io/github/v/release/vikdiesel/admin-one-bulma-dashboard?color=%23999">
+          <a href="https://github.com/justboil/admin-one-tailwind" style="height: 20px">
+            <img src="https://img.shields.io/github/v/release/justboil/admin-one-tailwind?color=%23999">
           </a>
         </div>
       </div>
@@ -416,27 +422,43 @@
 </footer>
 
 <div id="sample-modal" class="modal">
-  <div class="modal-background jb-modal-close"></div>
+  <div class="modal-background --jb-modal-close"></div>
   <div class="modal-card">
     <header class="modal-card-head">
-      <p class="modal-card-title">Confirm action</p>
-      <button class="delete jb-modal-close" aria-label="close"></button>
+      <p class="modal-card-title">Sample modal</p>
     </header>
     <section class="modal-card-body">
-      <p>This will permanently delete <b>Some Object</b></p>
+      <p>Lorem ipsum dolor sit amet <b>adipiscing elit</b></p>
       <p>This is sample modal</p>
     </section>
     <footer class="modal-card-foot">
-      <button class="button jb-modal-close">Cancel</button>
-      <button class="button is-danger jb-modal-close">Delete</button>
+      <button class="button --jb-modal-close">Cancel</button>
+      <button class="button red --jb-modal-close">Confirm</button>
     </footer>
   </div>
-  <button class="modal-close is-large jb-modal-close" aria-label="close"></button>
 </div>
+
+<div id="sample-modal-2" class="modal">
+  <div class="modal-background --jb-modal-close"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Sample modal</p>
+    </header>
+    <section class="modal-card-body">
+      <p>Lorem ipsum dolor sit amet <b>adipiscing elit</b></p>
+      <p>This is sample modal</p>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button --jb-modal-close">Cancel</button>
+      <button class="button blue --jb-modal-close">Confirm</button>
+    </footer>
+  </div>
+</div>
+
 </div>
 
 <!-- Scripts below are for demo only -->
-<script type="text/javascript" src="js/main.min.js?v=1623067603349"></script>
+<script type="text/javascript" src="js/main.min.js?v=1623142040419"></script>
 
 
 <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
