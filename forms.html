@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top">
+<html lang="en" class="">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Forms - Admin One HTML - Tailwind CSS Admin Dashboard</title>
+  <title>Forms - Admin One Tailwind CSS Admin Dashboard</title>
 
   <!-- Tailwind is included -->
-  <link rel="stylesheet" href="css/main.css?v=1623142040419">
+  <link rel="stylesheet" href="css/main.css?v=1623151132254">
 
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
@@ -91,9 +91,13 @@
           </a>
         </div>
       </div>
-      <a href="https://justboil.me/tailwind-admin-templates" title="About" class="navbar-item has-divider desktop-icon-only">
+      <a href="https://justboil.me/tailwind-admin-templates" class="navbar-item has-divider desktop-icon-only">
         <span class="icon"><i class="mdi mdi-help-circle-outline"></i></span>
         <span>About</span>
+      </a>
+      <a href="https://github.com/justboil/admin-one-tailwind" class="navbar-item has-divider desktop-icon-only">
+        <span class="icon"><i class="mdi mdi-github-circle"></i></span>
+        <span>Github</span>
       </a>
       <a title="Log out" class="navbar-item desktop-icon-only">
         <span class="icon"><i class="mdi mdi-logout"></i></span>
@@ -106,7 +110,7 @@
 <aside class="aside is-placed-left is-expanded">
   <div class="aside-tools">
     <div class="aside-tools-label">
-      Admin One
+      Admin <b class="font-black">One</b>
     </div>
   </div>
   <div class="menu is-menu-main">
@@ -137,6 +141,12 @@
         <a href="profile.html">
           <span class="icon"><i class="mdi mdi-account-circle"></i></span>
           <span class="menu-item-label">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html">
+          <span class="icon"><i class="mdi mdi-lock"></i></span>
+          <span class="menu-item-label">Login</span>
         </a>
       </li>
       <li>
@@ -171,6 +181,12 @@
         <a href="https://justboil.me/tailwind-admin-templates" class="has-icon">
           <span class="icon"><i class="mdi mdi-help-circle"></i></span>
           <span class="menu-item-label">About</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/justboil/admin-one-tailwind" class="has-icon">
+          <span class="icon"><i class="mdi mdi-github-circle"></i></span>
+          <span class="menu-item-label">Github</span>
         </a>
       </li>
     </ul>
@@ -215,7 +231,7 @@
   </div>
 </section>
 
-  <section class="section is-main-section">
+  <section class="section main-section">
     <div class="card">
       <header class="card-header">
         <p class="card-header-title">
@@ -229,17 +245,17 @@
             <label class="label">From</label>
             <div class="field-body">
               <div class="field">
-                <p class="control is-expanded icons-left">
+                <div class="control is-expanded icons-left">
                   <input class="input" type="text" placeholder="Name">
                   <span class="icon is-small left"><i class="mdi mdi-account"></i></span>
-                </p>
+                </div>
               </div>
               <div class="field">
-                <p class="control is-expanded icons-left icons-right">
+                <div class="control is-expanded icons-left icons-right">
                   <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
                   <span class="icon is-small left"><i class="mdi mdi-mail"></i></span>
                   <span class="icon is-small right"><i class="mdi mdi-check"></i></span>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -247,12 +263,12 @@
             <div class="field-body">
               <div class="field">
                 <div class="field addons">
-                  <p class="control">
+                  <div class="control">
                     <input class="input" value="+44" size="3" readonly>
-                  </p>
-                  <p class="control expanded">
+                  </div>
+                  <div class="control expanded">
                     <input class="input" type="tel" placeholder="Your phone number">
-                  </p>
+                  </div>
                 </div>
                 <p class="help">Do not enter the first zero</p>
               </div>
@@ -293,12 +309,12 @@
           <div class="field grouped">
             <div class="control">
               <button type="submit" class="button green">
-                <span>Submit</span>
+                Submit
               </button>
             </div>
             <div class="control">
-              <button type="button" class="button red">
-                <span>Reset</span>
+              <button type="reset" class="button red">
+                Reset
               </button>
             </div>
           </div>
@@ -458,7 +474,7 @@
 </div>
 
 <!-- Scripts below are for demo only -->
-<script type="text/javascript" src="js/main.min.js?v=1623142040419"></script>
+<script type="text/javascript" src="js/main.min.js?v=1623151132254"></script>
 
 
 <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
