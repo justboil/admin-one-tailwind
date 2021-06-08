@@ -45,3 +45,7 @@
 .widget-label h1 {
   @apply text-3xl leading-tight font-semibold;
 }
+
+.form-screen .card {
+  @apply w-11/12 md:w-5/12 shadow-2xl rounded-lg;
+}
