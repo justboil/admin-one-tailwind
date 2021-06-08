@@ -53,21 +53,40 @@ const processCss = () => {
 const dateNowMillis = Date.now()
 
 const concatHtml = file => {
-  const replaceHtmlClassWith = 'has-aside-left has-aside-mobile-transition has-navbar-fixed-top'
+  let replaceHtmlClassWith = ''
+  const formScreenFiles = ['login']
+
+  if (formScreenFiles.indexOf(file) > -1) {
+    replaceHtmlClassWith = 'form-screen'
+  }
 
   const sources = [
     'src/html/parts/head.html',
-    'src/html/parts/app-open.html',
-    'src/html/parts/navbar.html',
-    'src/html/parts/aside.html',
-    'src/html/parts/title-bar.html',
-    'src/html/parts/hero-bar.html',
-    `src/html/${file}.html`,
-    'src/html/parts/footer.html',
-    'src/html/parts/sample-modal.html',
-    'src/html/parts/app-close.html',
-    'src/html/parts/bottom-scripts.html',
+    'src/html/parts/app-open.html'
   ]
+
+  if (formScreenFiles.indexOf(file) < 0) {
+    sources.push(
+      'src/html/parts/navbar.html',
+      'src/html/parts/aside.html',
+      'src/html/parts/title-bar.html',
+      'src/html/parts/hero-bar.html'
+    )
+  }
+
+  sources.push(`src/html/${file}.html`)
+
+  if (formScreenFiles.indexOf(file) < 0) {
+    sources.push(
+      'src/html/parts/footer.html',
+      'src/html/parts/sample-modal.html'
+    )
+  }
+
+  sources.push(
+    'src/html/parts/app-close.html',
+    'src/html/parts/bottom-scripts.html'
+  )
 
   if (file === 'index') {
     sources.push('src/html/parts/bottom-scripts-home.html')
@@ -79,7 +98,8 @@ const concatHtml = file => {
     tables: 'Tables',
     index: 'Dashboard',
     forms: 'Forms',
-    profile: 'Profile'
+    profile: 'Profile',
+    login: 'Login'
   }
 
   const titleStringsLong = {
@@ -119,6 +139,7 @@ exports.default = series(
     () => concatHtml('tables'),
     () => concatHtml('forms'),
     () => concatHtml('profile'),
+    () => concatHtml('login'),
     processJsMain,
     processJsMainMin,
     processJsChartSample,

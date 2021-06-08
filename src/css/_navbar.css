@@ -94,4 +94,8 @@
   .navbar-item:not(.active) .navbar-dropdown {
     @apply md:hidden;
   }
+
+  .navbar-item.active:not(.dropdown), .navbar-item.active.dropdown > .navbar-link {
+    @apply text-blue-500;
+  }
 }

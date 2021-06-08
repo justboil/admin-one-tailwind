@@ -1,6 +1,10 @@
 @layer components {
-  .field:not(:last-child, .mb-0) {
+  .field:not(:last-child) {
     @apply mb-3;
+  }
+
+  .field.spaced:not(:last-child) {
+    @apply mb-6;
   }
 
   .field-body .field .field {
@@ -36,18 +40,6 @@
   .field.grouped.multiline {
     @apply flex-wrap;
   }
-
-  /*.field.horizontal {
-    @apply md:flex;
-  }
-
-  .field.horizontal .field-label {
-    @apply md:flex-grow md:flex-shrink-0 md:mr-6 md:text-right;
-  }
-
-  .field.horizontal .field-body {
-    @apply md:flex flex-shrink flex-grow-5;
-  }*/
 
   .label {
     @apply block font-bold mb-2;
@@ -102,7 +94,7 @@
   }
 
   .help {
-    @apply block text-xs mt-1;
+    @apply block text-xs text-gray-500 mt-1;
   }
 
   .file {
