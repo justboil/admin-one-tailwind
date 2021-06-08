@@ -108,17 +108,23 @@ const copyImg = () => {
     .pipe(dest(destDir + '/img'))
 }
 
+const copyTailwindFavicons = () => {
+  return src('src/tailwind-favicons/*')
+    .pipe(dest(destDir))
+}
+
 exports.default = series(
   parallel(
     () => concatHtml('index'),
     () => concatHtml('tables'),
     () => concatHtml('forms'),
     () => concatHtml('profile'),
+    processJsMain,
+    processJsMainMin,
+    processJsChartSample,
+    processJsChartSampleMin,
+    copyImg,
+    copyTailwindFavicons,
   ),
-  processJsMain,
-  processJsMainMin,
-  processJsChartSample,
-  processJsChartSampleMin,
-  copyImg,
   processCss
 )
