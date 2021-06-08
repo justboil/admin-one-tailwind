@@ -2,17 +2,17 @@
 
 [comment]: <> ([![version]&#40;https://img.shields.io/github/v/release/justboil/admin-one-bulma-dashboard&#41;]&#40;https://justboil.me/bulma-admin-template/one-html&#41;  [![license]&#40;https://img.shields.io/badge/license-MIT-blue.svg&#41;]&#40;https://justboil.me/bulma-admin-template/one-html&#41;)
 
-[comment]: <> ([![Free Bulma admin dashboard]&#40;https://justboil.me/images/one/repository-preview-html-hi-res.png&#41;]&#40;https://vikdiesel.github.io/admin-one-bulma-dashboard/&#41;)
+[![Free Tailwind CSS admin dashboard](https://justboil.me/images/one-tailwind/repository-preview-hi-res.png)](https://justboil.github.io/admin-one-tailwind/)
 
-**Admin One HTML** is simple, beautiful and free TailwindCSS admin dashboard (pure HTML version).
+**Admin One** is simple, beautiful and free Tailwind CSS admin dashboard
 
 * Free under MIT License
-* Built with TailwindCSS Framework
+* Built with Tailwind CSS Framework
 * Pure HTML & CSS
 * No js framework dependencies
 * Ready-to-use CSS files
 
-[comment]: <> (* [Premium version]&#40;https://justboil.me/bulma-admin-template/one-html&#41; available)
+[comment]: <> (* [Premium version]&#40;https://justboil.me/tailwind-admin-templates&#41; available)
 
 ## Table of Contents
 
