@@ -1,0 +1,93 @@
+@layer components {
+  .navbar, .navbar-menu, .navbar-start, .navbar-end {
+    @apply md:flex md:items-stretch;
+  }
+
+  .navbar {
+    @apply top-0 left-0 right-0 fixed flex bg-white h-14 border-b border-gray-100 z-30 w-screen transition-all
+    md:pl-60 md:w-auto;
+  }
+
+  .navbar-brand {
+    @apply flex-1 items-stretch	flex h-14;
+  }
+
+  .navbar-brand.is-right {
+    @apply flex-none md:hidden;
+  }
+
+  .navbar-brand .navbar-item {
+    @apply items-center flex;
+  }
+
+  .navbar-item, .navbar-link {
+    @apply block py-2 px-3;
+  }
+
+  .navbar-item {
+    @apply flex-grow-0 flex-shrink-0 relative md:flex md:items-center;
+  }
+
+  .navbar-item.mobile-aside-button {
+    @apply md:hidden;
+  }
+
+  .navbar-item.has-divider {
+    @apply md:border-r md:border-gray-100;
+  }
+
+  .navbar-item > .navbar-link {
+    @apply bg-gray-100 md:bg-transparent;
+  }
+
+  .navbar-item .icon + span {
+    @apply ml-2;
+  }
+
+  .navbar-item.has-user-avatar > .navbar-link {
+    @apply flex items-center;
+  }
+
+  .navbar-item.has-user-avatar .is-user-avatar {
+    @apply w-6 h-6 mr-3 inline-flex;
+  }
+
+  .navbar-item.has-dropdown {
+    @apply p-0 md:py-2 md:px-3;
+  }
+
+  .navbar-item.desktop-icon-only {
+    @apply md:w-16 md:justify-center;
+  }
+
+  .navbar-item.desktop-icon-only span:last-child {
+    @apply md:hidden;
+  }
+
+  .navbar-item .input {
+    @apply border-0;
+  }
+
+  .navbar-menu {
+    max-height: calc(100vh - 3.5rem);
+    @apply hidden absolute w-screen top-14 left-0 bg-white border-b border-gray-100 overflow-auto shadow
+    md:flex md:flex-grow md:static md:border-b-0 md:overflow-visible md:shadow-none;
+  }
+
+  .navbar-menu.active {
+    @apply block;
+  }
+
+  .navbar-end {
+    @apply md:justify-end md:ml-auto;
+  }
+
+  .navbar-item .navbar-dropdown {
+    @apply text-sm md:border-gray-200 md:border-t-2
+    md:bg-white md:absolute md:top-full md:left-0 md:min-w-full md:z-20 md:shadow-md md:rounded-b;
+  }
+
+  .navbar-item:not(.active) .navbar-dropdown {
+    @apply md:hidden;
+  }
+}

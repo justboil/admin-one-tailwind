@@ -1,0 +1,19 @@
+.notification {
+  @apply px-3 py-6 rounded;
+}
+
+.notification:not(:last-child) {
+  @apply mb-6;
+}
+
+.notification.blue {
+  @apply bg-blue-500 text-white;
+}
+
+.notification.green {
+  @apply bg-green-500 text-white;
+}
+
+.notification.red {
+  @apply bg-red-500 text-white;
+}

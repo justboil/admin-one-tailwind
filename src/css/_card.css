@@ -1,0 +1,47 @@
+.card {
+  @apply bg-white border border-gray-100 rounded;
+}
+
+.card:not(:last-child) {
+  @apply mb-6;
+}
+
+.card.has-table .card-content {
+  @apply p-0;
+}
+
+.card-content {
+  @apply p-6;
+}
+
+.card-content hr {
+  @apply my-6 -mx-6;
+}
+
+.card.empty .card-content {
+  @apply text-center py-12 text-gray-500;
+}
+
+.card-header {
+  @apply flex items-stretch border-b border-gray-100;
+}
+
+.card-header-title, .card-header-icon {
+  @apply flex items-center py-3 px-4;
+}
+
+.card-header-title {
+  @apply flex-grow font-bold ;
+}
+
+.card-header-icon {
+  @apply justify-center;
+}
+
+.widget-label h3 {
+  @apply text-lg leading-tight text-gray-500;
+}
+
+.widget-label h1 {
+  @apply text-3xl leading-tight font-semibold;
+}

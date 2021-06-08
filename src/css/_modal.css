@@ -1,0 +1,33 @@
+.modal {
+  @apply hidden items-center flex-col justify-center overflow-hidden fixed z-40;
+}
+
+.modal.active {
+  @apply flex;
+}
+
+.modal-background {
+  @apply bg-gray-900 bg-opacity-80;
+}
+
+.modal-card {
+  max-height: calc(100vh - 160px);
+  @apply w-full flex flex-col overflow-hidden relative
+    md:mx-auto md:w-2/5;
+}
+
+.modal-card-body {
+  @apply bg-white flex-grow flex-shrink overflow-auto p-6;
+}
+
+.modal-card-head, .modal-card-foot {
+  @apply flex items-center flex-shrink-0 justify-start p-6 relative bg-gray-50 border-gray-100;
+}
+
+.modal-card-head {
+  @apply border-b rounded-t;
+}
+
+.modal-card-foot {
+  @apply border-t rounded-b;
+}

@@ -1,0 +1,7 @@
+.is-hero-bar {
+  @apply bg-white border-b border-gray-100 p-6;
+}
+
+.is-hero-bar h1 {
+  @apply text-3xl font-semibold leading-tight;
+}

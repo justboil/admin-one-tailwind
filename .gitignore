@@ -1,0 +1,8 @@
+# Files
+.DS_Store
+npm-debug.log
+package-lock.json
+
+# Folders
+.idea/
+node_modules

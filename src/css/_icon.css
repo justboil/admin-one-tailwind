@@ -1,0 +1,15 @@
+.icon {
+  @apply inline-flex justify-center items-center w-6 h-6;
+}
+
+.icon.widget-icon {
+  @apply w-20 h-20;
+}
+
+.icon.large {
+  @apply w-12 h-12;
+}
+
+.icon i {
+  @apply inline-flex;
+}

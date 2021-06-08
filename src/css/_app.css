@@ -1,0 +1,7 @@
+#app {
+  @apply w-screen transition-all md:w-auto;
+}
+
+.has-dropdown {
+  @apply cursor-pointer;
+}

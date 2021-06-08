@@ -1,0 +1,26 @@
+@import "tailwind/_base.css";
+@import "tailwind/_components.css";
+@import "tailwind/_utilities.css";
+
+@import "_body.css";
+@import "_navbar.css";
+@import "_aside.css";
+@import "_title-bar.css";
+@import "_button.css";
+@import "_hero.css";
+@import "_card.css";
+@import "_icon.css";
+@import "_tiles.css";
+@import "_section.css";
+@import "_table.css";
+@import "_progress.css";
+@import "_level.css";
+@import "_image.css";
+@import "_app.css";
+@import "_modal.css";
+@import "_notifications.css";
+@import "form/_checkbox-radio-switch.css";
+@import "form/_form.css";
+@import "_footer.css";
+
+
