@@ -62,7 +62,7 @@
   }
 
   .input, .textarea, .select select {
-    @apply w-full max-w-full focus:border-gray-100 focus:ring focus:outline-none;
+    @apply w-full max-w-full focus:border-gray-100 focus:ring focus:outline-none bg-white;
   }
 
   .input[readonly] {
@@ -86,7 +86,7 @@
   }
 
   .control.icons-right .input, .control.icons-right .select select {
-    @apply pl-10;
+    @apply pr-10;
   }
 
   .control.icons-right .icon.right {

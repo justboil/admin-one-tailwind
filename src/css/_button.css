@@ -5,6 +5,14 @@
     focus:outline-none;
 }
 
+.button.addon-right {
+  @apply rounded-r-none;
+}
+
+.button.addon-left {
+  @apply rounded-l-none;
+}
+
 .button.small {
   @apply text-xs p-1;
 }

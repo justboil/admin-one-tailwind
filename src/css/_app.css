@@ -18,6 +18,10 @@ body {
   @apply overflow-hidden;
 }
 
+.m-clipped, .m-clipped body {
+  @apply overflow-hidden md:overflow-visible;
+}
+
 .form-screen body {
   @apply p-0;
 }

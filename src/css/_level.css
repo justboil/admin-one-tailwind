@@ -3,15 +3,15 @@
 }
 
 .level-left {
-  @apply justify-start md:flex;
+  @apply justify-start;
 }
 
 .level-right {
-  @apply justify-end md:flex;
+  @apply justify-end;
 }
 
 .level-left, .level-right {
-  @apply items-center flex-grow-0 flex-shrink-0;
+  @apply items-center flex-grow-0 flex-shrink-0 md:flex;
 }
 
 .level-left+.level-right {
