@@ -11,8 +11,7 @@
 * Pure HTML & CSS
 * No js framework dependencies
 * Ready-to-use CSS files
-
-[comment]: <> (* [Premium version]&#40;https://justboil.me/tailwind-admin-templates&#41; available)
+* [Premium Vue.js 3 version](https://justboil.me/tailwind-admin-templates/vue-dashboard) available
 
 ## Table of Contents
 
@@ -44,9 +43,13 @@ This is Pure HTML/CSS Tailwind CSS admin dashboard version
 
 ## Demo
 
-#### Free Dashboard Demo
+#### Free dashboard demo
 
 https://justboil.github.io/admin-one-tailwind/
+
+#### Premium Vue.js 3 dashboard demo
+
+https://tailwind-vue.justboil.me/
 
 ## Quick Start 
 
