@@ -1,5 +1,5 @@
 .aside {
-  @apply w-60 -left-60 fixed top-0 z-40 h-screen bg-gray-800 transition-all md:left-0;
+  @apply w-60 -left-60 fixed top-0 z-40 h-screen bg-gray-800 transition-all lg:left-0;
 }
 
 .aside-tools {
@@ -19,7 +19,7 @@
 }
 
 .aside-mobile-expanded, .aside-mobile-expanded body {
-  @apply overflow-hidden md:overflow-visible;
+  @apply overflow-hidden lg:overflow-visible;
 }
 
 .menu-label {

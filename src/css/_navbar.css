@@ -1,11 +1,11 @@
 @layer components {
   .navbar, .navbar-menu, .navbar-start, .navbar-end {
-    @apply md:flex md:items-stretch;
+    @apply lg:flex lg:items-stretch;
   }
 
   .navbar {
     @apply top-0 left-0 right-0 fixed flex bg-white h-14 border-b border-gray-100 z-30 w-screen transition-all
-    md:pl-60 md:w-auto;
+    lg:pl-60 lg:w-auto;
   }
 
   .navbar-brand {
@@ -13,7 +13,7 @@
   }
 
   .navbar-brand.is-right {
-    @apply flex-none md:hidden;
+    @apply flex-none lg:hidden;
   }
 
   .navbar-brand .navbar-item {
@@ -25,19 +25,19 @@
   }
 
   .navbar-item {
-    @apply flex-grow-0 flex-shrink-0 relative md:flex md:items-center;
+    @apply flex-grow-0 flex-shrink-0 relative lg:flex lg:items-center;
   }
 
   .navbar-item.mobile-aside-button {
-    @apply md:hidden;
+    @apply lg:hidden;
   }
 
   .navbar-item.has-divider {
-    @apply md:border-r md:border-gray-100;
+    @apply lg:border-r lg:border-gray-100;
   }
 
   .navbar-item > .navbar-link {
-    @apply bg-gray-100 md:bg-transparent;
+    @apply bg-gray-100 lg:bg-transparent;
   }
 
   .navbar-item .icon + span {
@@ -53,19 +53,19 @@
   }
 
   .navbar-item.dropdown {
-    @apply p-0 md:py-2 md:px-3;
+    @apply p-0 lg:py-2 lg:px-3;
   }
 
   .navbar-item.dropdown > .navbar-link .icon:last-child {
-    @apply hidden md:inline-flex;
+    @apply hidden lg:inline-flex;
   }
 
   .navbar-item.desktop-icon-only {
-    @apply md:w-16 md:justify-center;
+    @apply lg:w-16 lg:justify-center;
   }
 
   .navbar-item.desktop-icon-only span:last-child {
-    @apply md:hidden;
+    @apply lg:hidden;
   }
 
   .navbar-item .input {
@@ -75,7 +75,7 @@
   .navbar-menu {
     max-height: calc(100vh - 3.5rem);
     @apply hidden absolute w-screen top-14 left-0 bg-white border-b border-gray-100 overflow-auto shadow
-    md:flex md:flex-grow md:static md:border-b-0 md:overflow-visible md:shadow-none;
+    lg:flex lg:flex-grow lg:static lg:border-b-0 lg:overflow-visible lg:shadow-none;
   }
 
   .navbar-menu.active {
@@ -83,16 +83,16 @@
   }
 
   .navbar-end {
-    @apply md:justify-end md:ml-auto;
+    @apply lg:justify-end lg:ml-auto;
   }
 
   .navbar-item .navbar-dropdown {
-    @apply text-sm md:border-gray-200 md:border-t-2
-    md:bg-white md:absolute md:top-full md:left-0 md:min-w-full md:z-20 md:shadow-md md:rounded-b;
+    @apply text-sm lg:border-gray-200 lg:border-t-2
+    lg:bg-white lg:absolute lg:top-full lg:left-0 lg:min-w-full lg:z-20 lg:shadow-md lg:rounded-b;
   }
 
   .navbar-item:not(.active) .navbar-dropdown {
-    @apply md:hidden;
+    @apply lg:hidden;
   }
 
   .navbar-item.active:not(.dropdown), .navbar-item.active.dropdown > .navbar-link {

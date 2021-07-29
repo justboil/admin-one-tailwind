@@ -2,10 +2,6 @@
   @apply bg-white border border-gray-100 rounded;
 }
 
-.card:not(:last-child) {
-  @apply mb-6;
-}
-
 .card.has-table .card-content {
   @apply p-0;
 }
@@ -47,5 +43,5 @@
 }
 
 .form-screen .card {
-  @apply w-11/12 md:w-5/12 shadow-2xl rounded-lg;
+  @apply w-11/12 lg:w-5/12 shadow-2xl rounded-lg;
 }

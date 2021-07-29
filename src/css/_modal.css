@@ -13,7 +13,7 @@
 .modal-card {
   max-height: calc(100vh - 160px);
   @apply w-full flex flex-col overflow-hidden relative
-    md:mx-auto md:w-2/5;
+    lg:mx-auto lg:w-2/5;
 }
 
 .modal-card-body {

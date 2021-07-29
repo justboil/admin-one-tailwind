@@ -1,5 +1,5 @@
 .level {
-  @apply items-center justify-between	md:flex;
+  @apply items-center justify-between	lg:flex;
 }
 
 .level-left {
@@ -11,11 +11,11 @@
 }
 
 .level-left, .level-right {
-  @apply items-center flex-grow-0 flex-shrink-0 md:flex;
+  @apply items-center flex-grow-0 flex-shrink-0 lg:flex;
 }
 
 .level-left+.level-right {
-  @apply mt-6 md:mt-0;
+  @apply mt-6 lg:mt-0;
 }
 
 .level-item {
@@ -23,7 +23,7 @@
 }
 
 .level-left .level-item:not(:last-child), .level-right .level-item:not(:last-child) {
-  @apply md:mr-3;
+  @apply lg:mr-3;
 }
 
 .level.mobile {
