@@ -1,6 +1,6 @@
-# [Admin One &mdash; Free Tailwind Admin Dashboard](https://justboil.me/tailwind-admin-templates)
+# [Admin One &mdash; Free Tailwind Admin Dashboard](https://justboil.me/tailwind-admin-templates/free-dashboard/)
 
-[![version](https://img.shields.io/github/v/release/justboil/admin-one-tailwind)](https://justboil.me/tailwind-admin-templates)  [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://justboil.me/tailwind-admin-templates)
+[![version](https://img.shields.io/github/v/release/justboil/admin-one-tailwind)](https://justboil.me/tailwind-admin-templates/free-dashboard/)  [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://justboil.me/tailwind-admin-templates/free-dashboard/)
 
 [![Free Tailwind CSS admin dashboard](https://justboil.me/images/one-tailwind/repository-preview-hi-res.png)](https://justboil.github.io/admin-one-tailwind/)
 
@@ -11,11 +11,13 @@
 * Pure HTML & CSS
 * No js framework dependencies
 * Ready-to-use CSS files
-* [Premium Vue.js 3 version](https://justboil.me/tailwind-admin-templates/vue-dashboard) available
+* [Free Vue.js 3 version](https://github.com/justboil/admin-one-vue-tailwind)
+* [Premium Vue.js 3 version](https://justboil.me/tailwind-admin-templates/vue-dashboard)
 
 ## Table of Contents
 
 * [Other versions](#other-versions)
+  * [Vue.js 3 TailwindCSS](#vuejs-3-tailwindcss-dashboard)
 * [Demo](#demo)
 * [Quick Start](#quick-start)
 * [Browser Support](#browser-support)
@@ -25,21 +27,18 @@
 
 ## Other versions
 
-This is Pure HTML/CSS Tailwind CSS admin dashboard version
+### Vue.js 3 TailwindCSS dashboard
 
-<table>
-    <tr>
-        <td align="center" colspan="2"><a href="https://justboil.me/tailwind-admin-templates"><img src="https://justboil.me/images/tailwind-gh-logo.png?v=2" width="219" height="40" alt="Tailwind CSS admin dashboard templates"></a></td>
-    </tr>
-    <tr>
-        <td align="center"><a href="https://github.com/justboil/admin-one-tailwind" title="Free Tailwind CSS admin dashboard HTML"><img src="https://justboil.me/svg/language-html5.svg" width="64" height="64"></a></td>
-        <td align="center"><a href="https://github.com/justboil/admin-one-vue-tailwind" title="Free Vue.js 3 Tailwind CSS admin dashboard"><img src="https://justboil.me/svg/vuejs.svg" width="64" height="64"></a></td>
-    </tr>
-    <tr>
-        <td align="center">Tailwind admin dashboard<br/>Pure HTML/CSS<br/><br/><a href="https://github.com/justboil/admin-one-tailwind" title="Free Tailwind admin dashboard HTML CSS">Free</a></td>
-        <td align="center">Tailwind admin dashboard<br/>Vue.js 3<br/><br/><a href="https://github.com/justboil/admin-one-vue-tailwind" title="Free Vue.js 3 Tailwind CSS admin dashboard">Free</a> | <a href="https://justboil.me/tailwind-admin-templates/vue-dashboard" title="Vue.js 3 Tailwind CSS admin dashboard">Premium</a></td>
-    </tr>
-</table>
+* Built with **Vue.js 3**, **TailwindCSS** framework & **Composition API**
+* **Vite** and **Vue CLI** build tools
+* **Dark mode**
+* **Styled** scrollbars
+* SPA with **Vuex** & **Router**
+* **Production CSS** is only **33kb**
+
+More info: https://github.com/justboil/admin-one-vue-tailwind
+
+[![Free Vue.js 3 Tailwind CSS admin dashboard](https://justboil.me/images/one-v3/repository-tailwind-vue3-vite.png)](https://github.com/justboil/admin-one-vue-tailwind)
 
 ## Demo
 
