@@ -29,16 +29,7 @@
 
 ### Vue.js 3 TailwindCSS dashboard
 
-* Built with **Vue.js 3**, **TailwindCSS** framework & **Composition API**
-* **Vite** and **Vue CLI** build tools
-* **Dark mode**
-* **Styled** scrollbars
-* SPA with **Vuex** & **Router**
-* **Production CSS** is only **33kb**
-
 More info: https://github.com/justboil/admin-one-vue-tailwind
-
-[![Free Vue.js 3 Tailwind CSS admin dashboard](https://justboil.me/images/one-v3/repository-tailwind-vue3-vite.png)](https://github.com/justboil/admin-one-vue-tailwind)
 
 ## Demo
 
