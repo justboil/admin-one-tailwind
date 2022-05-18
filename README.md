@@ -1,4 +1,4 @@
-# [Admin One &mdash; Free Tailwind Admin Dashboard](https://justboil.me/tailwind-admin-templates/free-dashboard/)
+# [Admin One &mdash; Free Tailwind 3.x Admin Dashboard](https://justboil.me/tailwind-admin-templates/free-dashboard/)
 
 [![version](https://img.shields.io/github/v/release/justboil/admin-one-tailwind)](https://justboil.me/tailwind-admin-templates/free-dashboard/)  [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://justboil.me/tailwind-admin-templates/free-dashboard/)
 
@@ -7,7 +7,7 @@
 **Admin One** is simple, beautiful and free Tailwind CSS admin dashboard
 
 * Free under MIT License
-* Built with Tailwind CSS Framework
+* Built with TailwindCSS v3
 * Pure HTML & CSS
 * No js framework dependencies
 * Ready-to-use CSS files
@@ -92,7 +92,7 @@ The issue list is reserved exclusively for bug reports and feature requests. Tha
 
 ## Licensing
 
-- Copyright &copy; 2019-2021 JustBoil.me (https://justboil.me)
+- Copyright &copy; 2019-2022 JustBoil.me (https://justboil.me)
 - Licensed under MIT
 
 ## Useful Links
